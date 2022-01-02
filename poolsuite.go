@@ -257,31 +257,3 @@ func (ps *Poolsuite) refreshProgress() {
 	speaker.Unlock()
 }
 
-// ---------------------------- TESTING ONLY ------------------------------- //
-// func main() {
-// 	psfm := NewPoolsuite()
-// 	psfm.Load()
-//
-// 	track := psfm.GetRandomTrackFromPlaylist(psfm.GetRandomPlaylist())
-// 	psfm.Play(track, nil)
-//
-// 	fmt.Println("Waiting ..")
-// 	time.Sleep(8 * time.Second)
-// 	fmt.Println("Stopping ...")
-// 	psfm.PauseResume()
-// 	fmt.Println("Stopped, waiting ...")
-// 	time.Sleep(3 * time.Second)
-//
-// 	track = psfm.GetRandomTrackFromPlaylist(psfm.GetRandomPlaylist())
-// 	psfm.Play(track, nil)
-//
-// 	fmt.Println("Waiting ..")
-// 	time.Sleep(5 * time.Second)
-// 	fmt.Println("Stopping ...")
-// 	psfm.PauseResume()
-// 	fmt.Println("Stopped, waiting ...")
-// 	time.Sleep(3 * time.Second)
-//
-// 	fmt.Println("Done")
-// }
-
